@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PruneVito</title>
+
+    <meta name="theme-color" content="#120018">
+    <meta name="description" content="Aplicatie pentru gestionarea productiei PruneVito">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <div class="brand">Prune<span>Vito</span></div>
+                <div class="subtitle">Management productie</div>
+            </div>
+
+            <div class="status">
+                ONLINE
+            </div>
+        </header>
+
+        <main>
+
+            <section class="welcome">
+                <h1>Buna ziua!</h1>
+                <p>Ce vrei sa faci?</p>
+            </section>
+
+            <section class="menu">
+
+                <button class="menu-card" onclick="openPage('lot')">
+                    <div class="icon">🍑</div>
+                    <div>
+                        <h2>Lot nou</h2>
+                        <p>Inregistreaza un lot de prune</p>
+                    </div>
+                </button>
+
+                <button class="menu-card" onclick="openPage('raport')">
+                    <div class="icon">📋</div>
+                    <div>
+                        <h2>Raport calitate</h2>
+                        <p>Completeaza un raport</p>
+                    </div>
+                </button>
+
+                <button class="menu-card" onclick="openPage('uscare')">
+                    <div class="icon">🌡️</div>
+                    <div>
+                        <h2>Uscare</h2>
+                        <p>Parametri si program de uscare</p>
+                    </div>
+                </button>
+
+                <button class="menu-card" onclick="openPage('istoric')">
+                    <div class="icon">📦</div>
+                    <div>
+                        <h2>Istoric</h2>
+                        <p>Vezi loturile inregistrate</p>
+                    </div>
+                </button>
+
+            </section>
+
+            <section class="quick-info">
+
+                <div class="info-card">
+                    <span>LOTURI</span>
+                    <strong id="lotCount">0</strong>
+                </div>
+
+                <div class="info-card">
+                    <span>ULTIMUL LOT</span>
+                    <strong id="lastLot">-</strong>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            PruneVito • Vitomiresti, Olt
+        </footer>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
